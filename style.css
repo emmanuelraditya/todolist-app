@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(113,167,231,1) 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+#header {
+    margin-top: 100px;
+    font-size: 45px;
+    font-stretch: expanded ;
+    color: whitesmoke;
+}
+
+form {
+    margin-top: 50px;
+    
+}
+
+.btn-list {
+    color:black;
+    margin-left: 20px;
+}
+form input {
+    border:none;
+    border: solid 2px whitesmoke;
+    border-radius: 5px;
+    box-shadow: -3px 6px 4px grey;
+}
+li {
+    transition: 0.5s linear;
+    list-style: none;
+    margin-top: 20px;
+    color:black;
+}
+
+span {
+    float:right; 
+}
